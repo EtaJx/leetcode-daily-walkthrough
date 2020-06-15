@@ -20,10 +20,10 @@ const longCommonPrefix = (strsArr: string[]): string => {
   let result = '';
   for (let i = 0; i < ans.length; i++) {
     // 将第一个元素的每个字符 与 剩余元素数组每个元素相同位置的字符 进行比较
-    // compare every character of the first elemetn with the rest elemtns in the same index
+    // compare every character of the first element with the rest elements in the same index
     const flag = rest.every(item => item[i] === ans[i]);
     // 如果都相同，那么该字符为前缀的一部分
-    // if they are alls the same, the character is the part of the common prefix.
+    // if they are all the same, the character is the part of the common prefix.
     if (flag) {
       result += ans[i];
     } else {
